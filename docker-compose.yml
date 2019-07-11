@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  maclookup:
+    build: .
+    environment:
+      - MAC_API_KEY

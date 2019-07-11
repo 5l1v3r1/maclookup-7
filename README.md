@@ -59,6 +59,13 @@ Apple, Inc
 vagrant@ubuntu-bionic:~/maclookup$
 ```
 
+## Return Codes
+
+* Successful query - exit code `0`
+* Not providing exactly one CLI argument - `255`
+* Failure to set `$MAC_API_KEY` env var - `2`
+* HTTP or URL error, e.g. unable to connect, or API error: `1`. It will also publish the failure reason.
+
 
 ## Todo/Improvements
 
@@ -70,3 +77,4 @@ vagrant@ubuntu-bionic:~/maclookup$
   as a blank string.
 * It would be good to offer full data, as an option, e.g. with `-j` to return a JSON dump. 
 * Basic MAC address format validation could be done on the client side, prior to making the API call.
+* Add some basic tests

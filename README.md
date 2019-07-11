@@ -77,4 +77,4 @@ vagrant@ubuntu-bionic:~/maclookup$
   as a blank string.
 * It would be good to offer full data, as an option, e.g. with `-j` to return a JSON dump. 
 * Basic MAC address format validation could be done on the client side, prior to making the API call.
-* Add some basic tests
+* Add some basic tests & linting checks via CircleCI
